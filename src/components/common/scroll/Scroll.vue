@@ -51,7 +51,7 @@ export default {
         this.$emit("scroll", position);
       });
     }
-    console.log(this.scroll);
+    // console.log(this.scroll);
     // 3.监听scroll滚到底部
     if (this.pullUpLoad) {
       this.scroll.on('pullingUp', () => {
@@ -68,7 +68,7 @@ export default {
       this.scroll && this.scroll.finishPullUp();
     },
     refresh() {
-      console.log('高度重新计算');
+      // console.log('高度重新计算');
       this.scroll.refresh()
     }
   },

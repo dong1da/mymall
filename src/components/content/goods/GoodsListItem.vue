@@ -67,14 +67,12 @@
   overflow: hidden;
   text-align: center;
 }
-
 .goods-info p {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   margin-bottom: 3px;
 }
-
 .goods-info .price {
   color: var(--color-high-text);
   margin-right: 20px;

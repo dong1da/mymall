@@ -1,3 +1,16 @@
+export function debouce(func, delay=500) {
+  let timer = null;
+
+  return function (...args) {
+    if(timer) {
+      clearTimeout(timer)
+    }
+    timer = setTimeout(() => {
+      func(...args)
+    }, delay);
+  }
+}
+
 export function formatDate(date, fmt) {
   // 1.获取年份
   if(/(y+)/.test(fmt)) {
